@@ -20,11 +20,18 @@ const SchemaBuilder = () => {
 
   
   const handleAddField = (
+
     currentFields: Field[],
+
     updateFields: (updated: Field[]) => void
+
   ) => {
+
     const newField = createEmptyField();
+
     updateFields([...currentFields, newField]);
+    
+
   };
 
    
