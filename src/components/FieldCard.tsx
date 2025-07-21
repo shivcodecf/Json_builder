@@ -77,7 +77,7 @@ const FieldCard = ({
 
           <Select
             value={field.type}
-            className = "cursor-pointer"
+            
             onValueChange={(value) => handleFieldChange("type", value)}
           >
             <SelectTrigger className="flex-1 min-w-0 cursor-pointer">
