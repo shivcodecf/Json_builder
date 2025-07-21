@@ -44,14 +44,35 @@
 //   "include": ["src"]
 // }
 
+// {
+//   "compilerOptions": {
+//     "jsx": "react-jsx",          // ✅ Required
+//     "lib": ["dom", "esnext"],    // ✅ Helps JSX + browser API
+//     "esModuleInterop": true,
+//     "module": "esnext",
+//     "target": "es6",
+//     "moduleResolution": "node",
+//     "baseUrl": ".",
+//     "paths": {
+//       "@/*": ["src/*"]
+//     }
+//   },
+//   "include": ["src"]
+// }
+
 {
   "compilerOptions": {
-    "jsx": "react-jsx",          // ✅ Required
-    "lib": ["dom", "esnext"],    // ✅ Helps JSX + browser API
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "module": "esnext",
-    "target": "es6",
-    "moduleResolution": "node",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx", // ✅ Important for JSX support
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
@@ -59,5 +80,6 @@
   },
   "include": ["src"]
 }
+
 
 
